@@ -27,9 +27,9 @@
             </feature>
         </config-file>
 
-        <header-file src="src/ios/IRoot.h"/>
+        <header-file src="src/ios/solidAppSec.h"/>
 
-        <source-file src="src/ios/IRoot.m"/>
+        <source-file src="src/ios/solidAppSec.m"/>
     </platform>
 
     <platform name="android">
