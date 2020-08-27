@@ -6,7 +6,7 @@
 
 #import "Cordova/CDV.h"
 #import "Cordova/CDVViewController.h"
-#import "IRoot.h"
+#import "solidAppSec.h"
 #import <sys/stat.h>
 #import <sys/sysctl.h>
 
@@ -60,16 +60,16 @@ enum {
 /* End Jailbreak Definitions */
 
 
-@implementation IRoot
+@implementation solidAppSec
 
-- (void) isRooted:(CDVInvokedUrlCommand*)command;
+- (void) isScheck:(CDVInvokedUrlCommand*)command;
 {
     CDVPluginResult *pluginResult;
 
     @try
     {
-        bool jailbroken = [self jailbroken];
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:jailbroken];
+        bool jbken = [self jbken];
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:jbken];
     }
     @catch (NSException *exception)
     {
@@ -84,7 +84,7 @@ enum {
 
 
 
-- (bool) jailbroken {
+- (bool) jbken {
 
 #if !(TARGET_IPHONE_SIMULATOR)
 
@@ -222,7 +222,7 @@ enum {
     }
 
     // Cydia Check
-    if ([self cydiaCheck] != NOTJAIL) {
+    if ([self cccCheck] != NOTJAIL) {
         // Jailbroken
         motzart += 3;
     }
@@ -301,7 +301,7 @@ enum {
 }
 
 // Cydia Check
-- (int)cydiaCheck {
+- (int)cccCheck {
     @try {
         // Create a file path string
         NSString *filePath = CYDIALOC;

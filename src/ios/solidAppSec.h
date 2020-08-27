@@ -6,8 +6,8 @@
 #import "Foundation/Foundation.h"
 #import "Cordova/CDV.h"
 
-@interface IRoot : CDVPlugin
+@interface solidAppSec : CDVPlugin
 
-- (void) isRooted:(CDVInvokedUrlCommand*)command;
+- (void) isScheck:(CDVInvokedUrlCommand*)command;
 
 @end
