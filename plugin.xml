@@ -21,8 +21,8 @@
 
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
-            <feature name="IRoot">
-                <param name="ios-package" value="IRoot"/>
+            <feature name="solidAppSec">
+                <param name="ios-package" value="solidAppSec"/>
                 <param name="onload" value="true"/>
             </feature>
         </config-file>
